@@ -1,0 +1,31 @@
+.main-container {
+    width: 100%;
+}
+.main-content {
+    overflow: hidden;
+    padding-bottom: 200px;
+    background-color: #e9ebee;
+} 
+.sidenav-content {
+    height: 100%;
+}
+.sidenav {
+
+}
+.header-container {
+    width: 100%;
+    height: 50px;
+}
+.sidenav-toggle {
+    padding-top: 10px;
+    float: left;
+}
+.account {
+    position: relative;
+    float: right;
+    right: 30px;
+    padding-top: 5px;
+}
+.header {
+    background-color: #aab8c2;
+}

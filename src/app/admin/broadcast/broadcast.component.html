@@ -1,0 +1,44 @@
+
+  <button mat-button (click)="back()" class="nav-button-back">
+    <mat-icon color="primary">reply</mat-icon>
+</button>
+    <div class="flex-item">
+      <mat-card class="main-header">
+          <mat-card-title>Messaging</mat-card-title>
+        </mat-card>
+        
+        <mat-card class="main-body">
+          <mat-card class="main-header">
+              <mat-card-title>Email Messaging</mat-card-title>
+          </mat-card>
+
+
+      <div class="form-box">
+        <mat-card>
+          <div class="">
+            <mat-card class="">
+                <mat-form-field class="input">
+                  <input matInput placeholder="Subject" [(ngModel)]="subject">
+                </mat-form-field>
+        
+                <mat-form-field class="input">
+                  <input matInput placeholder="Recipient" [(ngModel)]="recipient">
+                </mat-form-field>
+            </mat-card>
+            <mat-card>
+              <textarea class="input broadcast-body" [(ngModel)]="content" matInput placeholder="Message body..."></textarea>
+            </mat-card>
+        
+        </div>
+        
+        </mat-card>
+        <div class="action-buttons">
+          <button mat-button class="login-button" routerLink="../dashboard">Cancel</button>
+          <button mat-button class="login-button" (click)="send()">Send</button>
+        </div>
+      </div>
+      
+        </mat-card>
+      
+    </div>
+  

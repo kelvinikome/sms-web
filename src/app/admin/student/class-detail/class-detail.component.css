@@ -1,0 +1,33 @@
+.new-class-button {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    z-index: 100;
+}
+.admission-card {
+    
+}
+.admission-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  
+.admission-full-width {
+    width: 100%;
+  }
+.admission-card {
+    position: relative;
+    top: 10px;
+    margin: auto;
+}
+.admission-button {
+
+}
+.admission-label {
+    text-align: center;
+    font: bold;
+    
+}
+  

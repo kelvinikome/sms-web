@@ -1,0 +1,63 @@
+
+  <button mat-button (click)="back()" class="nav-button-back">
+      <mat-icon color="primary">reply</mat-icon>
+  </button>
+    <div class="flex-item">
+      <mat-card class="main-header">
+          <mat-card-title>Class Management</mat-card-title>
+        </mat-card>
+        
+        <mat-card class="main-body">
+          <mat-card class="main-header">
+              <mat-card-title>Class Update</mat-card-title>
+          </mat-card>
+
+
+      <div class="form-box">
+        <mat-form-field class="flex-container">
+          <input matInput placeholder="Class Name" [(ngModel)]="classEntity.className" class="login-box-item">
+        </mat-form-field>
+
+        <mat-form-field class="flex-container">
+          <input matInput placeholder="Description" [(ngModel)]="classEntity.description  ">
+        </mat-form-field>
+
+        <mat-form-field class="flex-container">
+          <mat-select [(value)]="classEntity.classAdmin" placeholder="Class Admin">
+            <mat-option *ngFor="let entry of teachers" value="{{entry.id}}"> {{entry.username}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-divider></mat-divider>
+        <mat-card>
+          <div class="">
+            <mat-card class="">
+                <mat-card-header>
+                  <p style="text-align: center">Class Subject List</p>
+                </mat-card-header>
+        
+            </mat-card>
+            <mat-selection-list class="subject-list" #shoes>
+              <mat-list-option *ngFor="let subject of subjectList">
+                {{subject.subjectName}}
+              </mat-list-option>
+            </mat-selection-list>
+            
+            <p>
+              Subjects selected: {{shoes.selectedOptions.selected.length}}
+            </p>
+        
+        </div>
+        
+        </mat-card>
+        <div class="action-buttons">
+          <button mat-button class="login-button" (click)="cancel()">Cancel</button>
+          <button mat-button class="login-button" (click)="update()">Update</button>
+          <!-- <button mat-button class="login-button" (click)="delete()">Delete</button> -->
+        </div>
+      </div>
+      
+        </mat-card>
+      
+    </div>
+  

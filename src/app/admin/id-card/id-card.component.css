@@ -1,0 +1,78 @@
+
+.header-section {
+    background-color: blue;
+    height: 40%;
+ /*   background-image: url("header-bg.jpg"); */
+    color: #ffffff;
+}
+.body-section {
+    background-color: #ffffff;
+    height: 50%;
+}
+.footer-section {
+ /*   background-image: url("header-bg.jpg"); */
+    background-color: blue;
+    height: 10%;
+}
+.card-container {
+    border: 1px solid;
+    width: 15cm;
+    height:7cm
+}
+.account-image {
+    height: 4cm;
+    width: 4cm;
+    border: 0px solid;
+    position: absolute;
+    float: left;
+    top:60px;
+    left: 50px;
+    background-color: aquamarine;
+}
+.account-barcode {
+    height: 0.7cm;
+    width: 4cm;
+    border: 0px dotted;
+    position: absolute;
+    float: left;
+    top:220px;
+    left: 50px;
+    background-color: blanchedalmond;
+}
+.barcode-image {
+    height: 0.7cm;
+    width: 4cm;
+}
+.brand {
+    float: right;
+    position: relative;
+    right: 20px;
+    font-size: 30px;
+    border: 1px solid;
+    max-width: 50%;
+}
+.account-content {
+    height: 4cm;
+    width: 50%;
+    border: 0px solid;
+    position: relative;
+    float: right;
+    right: 50px;
+}
+.content-container {
+    padding-top: 10px;
+    border-bottom: 1px dotted;
+}
+.content-title {
+    font-size: 10px;
+    color: gray;
+}
+.content-body {
+
+}
+
+@media print {
+    .print-area {
+      visibility: visible
+    }
+}

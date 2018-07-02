@@ -1,0 +1,33 @@
+
+<mat-drawer-container class="main-container" autosize>
+    <mat-drawer #drawer class="sidenav mat-elevation-z9" mode="side" opened>
+      <app-sidenav></app-sidenav>
+    </mat-drawer>
+  
+    <div class="main-content flex-container">
+
+      <mat-toolbar class="header">
+          <button mat-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <div class="flex-item header-container">
+              <div  class="header-nav-buttons">
+                <button mat-icon-button routerLink="/admin">
+                    <mat-icon>home</mat-icon>
+                </button>
+                <button mat-icon-button>
+                  <mat-icon>settings</mat-icon>
+                </button>
+                <button mat-icon-button routerLink="/login">
+                  <mat-icon>exit_to_app</mat-icon>
+                </button>
+              </div>
+                
+          </div> 
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+      
+    </div>
+  
+  </mat-drawer-container>
+  

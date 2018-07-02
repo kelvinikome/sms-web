@@ -1,0 +1,9 @@
+.new-class-button {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    z-index: 100;
+}
+.filter-box {
+    width: 70%;
+}

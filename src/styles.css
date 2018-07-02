@@ -1,0 +1,53 @@
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.flex-column {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.flex-item {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.padding-basic {
+    margin: 1px;
+}
+.main-header {
+    text-align: center;
+}
+.main-body {
+    position: relative;
+    top:30px;
+    margin: 20px;
+}
+  
+.create-entry-button {
+    position: relative;
+    left: 40px;
+    z-index: 100;
+}
+.filter-box {
+    width: 70%;
+}
+
+.header-nav-buttons {
+    position: relative;
+    float: right;
+    right: 30px;
+    padding-top: 5px;
+}
+
+.brand {
+    position: relative;
+    float: left;
+}
+.brand-title {
+    font: bold;
+    padding-top: 5px;
+    color: white;
+}

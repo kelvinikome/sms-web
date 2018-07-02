@@ -1,0 +1,16 @@
+.login-box {
+    width: 400px;
+    margin: auto;
+    top: 100px;
+    background-color: burlywood;
+}
+.login-box-item {
+    width: 100%;
+}
+.login-message {
+    color: red;
+    text-align: center;
+}
+mat-card-title {
+    text-align: center;
+}

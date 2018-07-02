@@ -1,0 +1,28 @@
+
+
+  <button mat-button (click)="back()" class="nav-button-back">
+    <mat-icon color="primary">reply</mat-icon>
+  </button>
+<mat-card class="main-header">
+  <mat-card-title>Dashboard</mat-card-title>
+</mat-card>
+
+<mat-card class="main-body">
+  <mat-card class="class-label-card">
+    <mat-card-title class="class-label-title">Class Name</mat-card-title>
+  </mat-card>
+  <div class="flex-column">
+    <div class="flex-item padding-basic">
+      <mat-card routerLink="../../class-list/{{param}}">Class List</mat-card>
+    </div>
+    <div class="flex-item padding-basic">
+      <mat-card>Time Table</mat-card>
+    </div>
+    <div class="flex-item padding-basic">
+      <mat-card routerLink="../../fill-marks-select/{{param}}">Fill Marks</mat-card>
+    </div>
+    <div class="flex-item padding-basic">
+      <mat-card>View MarkSheet</mat-card>
+    </div>
+  </div>
+</mat-card>

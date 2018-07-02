@@ -1,0 +1,67 @@
+
+
+  <button mat-button (click)="back()" class="nav-button-back">
+    <mat-icon color="primary">reply</mat-icon>
+</button>
+<mat-card class="main-header">
+  <mat-card-title>{{classEntity.className}} - {{subject.subjectName}}</mat-card-title>
+</mat-card>
+
+<mat-card class="main-body">
+  <div class="subject-list-box">
+    <div class="padding-basic">
+      <mat-card>
+      
+          <mat-table class="lessons-table mat-elevation-z8" [dataSource]="dataSource">
+      
+              <ng-container matColumnDef="id">
+                  <mat-header-cell *matHeaderCellDef>Class Number</mat-header-cell>
+                  <mat-cell *matCellDef="let entry">{{entry.classNumber}}</mat-cell>
+              </ng-container>
+          
+              <ng-container matColumnDef="studentName">
+                  <mat-header-cell *matHeaderCellDef>Student Name</mat-header-cell>
+                  <mat-cell class="description-cell"
+                            *matCellDef="let entry">{{entry.studentName}}</mat-cell>
+          
+              </ng-container>
+          
+              <ng-container matColumnDef="subjectScore">
+                  <mat-header-cell *matHeaderCellDef>Subject Score</mat-header-cell>
+                  <mat-cell *matCellDef="let entry">
+                    <input type="number" [(ngModel)]="entry.score">
+                  </mat-cell>
+              </ng-container>
+          
+              <ng-container matColumnDef="coefficient">
+                  <mat-header-cell *matHeaderCellDef>Coefficient</mat-header-cell>
+                  <mat-cell *matCellDef="let entry">
+                    {{subject.coefficient}}
+                  </mat-cell>
+              </ng-container>
+          
+              <ng-container matColumnDef="totalScore">
+                  <mat-header-cell *matHeaderCellDef>Total Score</mat-header-cell>
+                  <mat-cell class="duration-cell"
+                            *matCellDef="let entry">{{ subject.coefficient * entry.score }}</mat-cell>
+              </ng-container>
+          
+              <ng-container matColumnDef="action">
+                  <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                  <mat-cell class="duration-cell"
+                            *matCellDef="let entry">
+                    <button mat-button (click)="updateEntry(entry.studentId, entry.studentName, entry.score)">Update</button>
+                  </mat-cell>
+              </ng-container>
+          
+              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          
+              <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+              
+              <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      
+          </mat-table>
+      </mat-card>
+    </div>
+  </div>
+</mat-card>

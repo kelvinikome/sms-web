@@ -1,0 +1,29 @@
+
+  <button mat-button (click)="back()" class="nav-button-back">
+    <mat-icon color="primary">reply</mat-icon>
+  </button>
+<mat-card class="main-header">
+    <mat-card-title>Marksheet</mat-card-title>
+  </mat-card>
+  
+  <mat-card class="main-body">
+    
+    <div class="container" id="print-section">
+      <h2 class="text-center" (click)="print()">{{classEntity.className}}</h2>           
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th *ngFor="let entry of subjectEntities">{{entry.subjectName}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of studentEntities">
+            <td>{{student.firstName}} {{student.lastName}}</td>
+            <td *ngFor="let subject of subjectEntities">{{getTotalScoreForSubject(subject.id, student.id)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>
+  

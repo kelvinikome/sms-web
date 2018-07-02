@@ -1,0 +1,8 @@
+@media print {
+    /* print styles go here */
+    body {
+        font-size: 28px;
+        color: aqua;
+        background-color: red;
+    }
+}

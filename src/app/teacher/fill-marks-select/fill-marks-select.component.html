@@ -1,0 +1,25 @@
+
+
+  <button mat-button (click)="back()" class="nav-button-back">
+      <mat-icon color="primary">reply</mat-icon>
+  </button>
+  <mat-card class="main-header">
+    <mat-card-title>Fill Marks</mat-card-title>
+  </mat-card>
+  
+  <mat-card class="main-body">
+    <div class="subject-list-box">
+      <div class="padding-basic">
+        <mat-card>
+          <mat-nav-list class="side-menu-list" color="primary">          
+            <div>
+              <mat-list-item  routerLink="../../fill-marks-subject/{{classId}}/{{subject.id}}" *ngFor="let subject of subjects">
+                  <span>{{subject.subjectName}} </span>
+              </mat-list-item>
+            </div>
+          </mat-nav-list>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card>
+  

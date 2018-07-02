@@ -1,0 +1,33 @@
+
+<!--
+  <mat-grid-list cols="2" rowHeight="2:1" class="flex-container login-box">
+    <mat-grid-tile class="flex-item">
+      <p class="login-box">Login</p>
+    </mat-grid-tile>
+    <mat-grid-tile class="flex-item">
+      <div>
+        <div class="flex-container">
+          Sign
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+-->
+
+  <mat-card class="flex-container login-box">
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        
+          <mat-form-field class="flex-column login-box-item">
+            <input [(ngModel)]="username" matInput placeholder="Username">
+          </mat-form-field>
+    
+          <mat-form-field class="flex-column login-box-item">
+            <input [(ngModel)]="password" matInput placeholder="Password">
+          </mat-form-field>
+          <div class="login-message">{{loginMessage}}</div>
+          <div class="flex-column">
+            <button mat-button class="login-box-item login-button" (click)="login()">Login</button>
+          </div>
+      </mat-card-content>
+  </mat-card>

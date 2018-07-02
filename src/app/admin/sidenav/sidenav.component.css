@@ -1,0 +1,22 @@
+.side-menu {
+    width: 200px;
+    min-height: 450px;
+    overflow: hidden;
+}
+.side-menu-list {
+    padding-top: 10px;
+}
+.brand-card {
+    text-align: center;
+    background-color: #aab8c2;
+}
+  
+.account-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    margin: auto;
+    padding-top: 40px;
+    height: 60%;
+    width: 60%;
+}
+  
